@@ -5,35 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
   <body>
     <header>
-      <div class="navbar navbar-expand-sm navbar-light navbar-clean">
-        <a class="navbar-brand" href="#">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-        </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
-              </li>
-              <li class="nav-item dropdown">
-                <img src="img/logo.png" alt="" class="logo">
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Services</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                </div>
-              </li>
-            </ul>
-        </div>
+      <div class="logo">
+        <img src="img/logo.png" alt="my logo image">
       </div>
+      <button class="nav-toggle" aria-label="togge navigation">
+        <span class="prop"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+        </ul>
+      </nav>
     </header>   
 
     <!--Intro -->
@@ -51,17 +40,17 @@
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
         <div class="service">
-          <h3></h3>
+          <h3>Software Engineering</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto fuga expedita perspiciatis temporibus, fugit hic voluptate adipisci quod, tempore, dolorum. Eum iure fugiat minus a ut recusandae culpa possimus.</p>          
         </div>
 
         <div class="service">
-          <h3></h3>
+          <h3>Website Design</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptate id numquam et omnis hic. Eius explicabo totam itaque natus vitae. Culpa commodi, quidem possimus, tempore itaque unde dolores eligendi.</p>          
         </div>
 
         <div class="service">
-          <h3></h3>
+          <h3>Consulting</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos exercitationem ea quos, ducimus doloremque perspiciatis vel unde deserunt ex. Placeat veritatis excepturi velit architecto fugiat fuga, qui rerum inventore eum?</p>          
         </div>
 
@@ -73,35 +62,40 @@
     <!-- About me-->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__title--about"></p>
+      <p class="section__subtitle section__subtitle--about">Software Engineer based in London</p>
 
       <div class="about-me__body">
-        <p></p>
-        <p></p>
+        <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Temporibus voluptatum dignissimos tempore tenetur quis vitae totam possimus, laboriosam, enim quod veniam officiis maxime amet! Necessitatibus debitis, inventore totam dignissimos ratione!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Doloribus ut ab laboriosam? Blanditiis ex, earum iusto optio voluptatum necessitatibus animi harum odit iure quos tempora unde ratione eum obcaecati incidunt?</p>
       </div>
 
-      <img src="img/me_italy.png" alt="Me on a balcony" class="me_img">
+      <img src="img/me_italy.png" alt="Me on a balcony" class="about-me__img">
     </section>
 
     <!-- My work-->
     <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work"> A selection of my range of work</p>
 
       <div class="portfolio">
         <!-- Portfolio item 01-->
         <a href="#" class="portfolio__item">
-          <img src="logo.png" alt="" class="portfolio__img">
+          <img src="img/candles.png" alt="" class="portfolio__img">
         </a>
 
          <!-- Portfolio item 02-->
         <a href="#" class="portfolio__item">
-          <img src="logo.png" alt="" class="portfolio__img">
+          <img src="img/design.png" alt="" class="portfolio__img">
         </a>
 
          <!-- Portfolio item 03-->
         <a href="#" class="portfolio__item">
-          <img src="logo.png" alt="" class="portfolio__img">
+          <img src="img/glasses.png" alt="" class="portfolio__img">
+        </a>
+
+         <!-- Portfolio item 04-->
+        <a href="#" class="portfolio__item">
+          <img src="img/candles.png" alt="" class="portfolio__img">
         </a>
       </div>
     </section>
@@ -111,9 +105,7 @@
       <div class="footer-links">
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <div class="footer-copyright">
-         Kurtmcdonald24@gmail.com<i class="fab fa-mdb"></i>
+        <a href="">Kurtmcdonald24@gmail.com<i class="footer-links-email"></i></a>
       </div>
     </div>
 
