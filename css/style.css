@@ -11,7 +11,7 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 50px;
 }
 
 .nav {
@@ -50,7 +50,69 @@ header {
   color: var(--clr-accent);
 }
 
-/* Colors and fonts */
+.nav-toggle {
+  padding: .5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .icon {
+  transform: rotate(.625turn);
+}
+
+.nav-open .icon::before{
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .icon::after{
+  opacity: 0;
+}
+
+.icon {
+  display: block;
+  position: relative;
+}
+
+
+.icon,
+.icon::before,
+.icon::after {
+  background: var(--clr-accent);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.icon::before { top: 6px; }
+.icon::after { bottom: 6px; }
+
+/* general styles */
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
