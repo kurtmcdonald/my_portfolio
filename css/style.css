@@ -177,7 +177,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__title-intro {
-  font-weight: var(--fw-reg);
+ /* font-weight: var(--fw-reg);*/
 }
 
 .section__subtitle {
@@ -318,6 +318,19 @@ text-align: center;
   transform: scale(1.2);
   opacity: .75;
 }
+
+
+/* About me */
+
+.cv {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cv:hover {
+  cursor: pointer;
+}
+
 /* Footer */
 
 
