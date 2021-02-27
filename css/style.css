@@ -171,7 +171,9 @@ h3 { font-size: var(--fs-h3) }
 
   --clr-light: #F7F9FC; 
   --clr-dark: #303030; 
-  --clr-accent: #16e0bd; 
+  --clr-accent: #ffc600; 
+  --clr-green: #16e0bd; 
+  #ffc600
 
 
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -242,6 +244,82 @@ h3 { font-size: var(--fs-h3) }
   transform: scale(1.1);
 }
 
+.access {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scroll-down{
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mouse {
+  width: 2.5rem;
+  height: 5rem;
+  border: 2px solid #000;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.mouse span {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--clr-accent);
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1s linear infinite;
+}
+
+.arrow span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-right-color: var(--clr-accent);
+  border-bottom-color: var(--clr-accent);
+  transform: rotate(45deg);
+  animation: arrow-down 0.5s alternate infinite;
+}
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }  
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+  }  
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: 0.5;
+  }  
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /* My services */
 
@@ -298,16 +376,19 @@ text-align: center;
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  border-radius: 1px;
 }
 
 .portfolio__img {
+  height: 100%;
+  width: 100%;
   transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
