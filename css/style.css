@@ -367,9 +367,10 @@ text-align: center;
 /* My work */
 
 .my-work {
-  background-color: var(--clr-dark);
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);;
   color: var(--clr-light);
   text-align: center;
+  animation: change 10s ease-in-out infinite;
 }
 
 .portfolio {
