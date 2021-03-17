@@ -210,7 +210,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle--work {
-  color: var(--clr-accent);
+  color: var(--clr-light);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
