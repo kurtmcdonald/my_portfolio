@@ -367,7 +367,7 @@ text-align: center;
 /* My work */
 
 .my-work {
-  background: linear-gradient(-45deg, #EE7752, #E7E882, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #23A6D5, #23D5AB);
   color: var(--clr-light);
   text-align: center;
   animation: change 10s ease-in-out infinite;
